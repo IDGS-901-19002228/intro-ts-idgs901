@@ -48,3 +48,14 @@ const funcSumar=function(n1:number,n2:number):number{
 }
 console.log(funcSumar(4,9))
 
+//Parametros Rest en funciones
+// Los "..." son para identificar los parametros Rest
+function calcular2(...valores:number[]){
+    let suma=0;
+    for(let x=0; x<valores.length; x++)
+        suma+=valores[x];
+    return suma;
+}
+console.log("Parametros Rest")
+console.log(calcular2(10,2,3,4))
+console.log(calcular2(1,2))
